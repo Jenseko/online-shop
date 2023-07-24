@@ -1,0 +1,361 @@
+/*================= Imports =======================*/
+
+@font-face {
+  font-family: "karla-medium";
+  src: url("../fonts/Karla-Medium.ttf");
+}
+
+@font-face {
+  font-family: "karla-variant";
+  src: url("../fonts/Karla-VariableFont_wght.ttf");
+}
+/*===================================================
+                    Generals
+                    --------
+Font: Karla
+Farbe: #323A45/#848484
+
+===================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 10%;
+  font-size: 10px;
+  font-family: karla-variant;
+}
+
+a {
+  color: #323a45;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+img:hover {
+  opacity: 60%;
+}
+
+/*================= HEADER ======================*/
+
+header {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  color: #323a45;
+}
+
+header nav a {
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+header nav a:hover {
+  color: #848484;
+}
+
+/*=================== MAIN ========================*/
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Section -1- Backpack ≈≈≈≈≈≈≈≈≈ */
+
+.main_section_backpack article div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.main_section_backpack article p {
+  color: #848484;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Sub-Items ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_backpack .section_sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.main_section_backpack .section_sub .item01_div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.main_section_backpack .section_sub .item02_div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.main_section_backpack .section_sub .item03_div {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.main_section_backpack .section_sub .item04_div {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.main_section_backpack .section_sub .item05_div {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.main_section_backpack .section_sub .item06_div {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Section -2- Book ≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_book article div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.main_section_book article p {
+  color: #848484;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Sub-Items ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_book .section_sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.main_section_book .section_sub .item01_div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.main_section_book .section_sub .item02_div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.main_section_book .section_sub .item03_div {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.main_section_book .section_sub .item04_div {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.main_section_book .section_sub .item05_div {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.main_section_book .section_sub .item06_div {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Section -3- Lamp ≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_lamp article div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.main_section_lamp article p {
+  color: #848484;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Sub-Items ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_lamp .section_sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.main_section_lamp .section_sub .item01_div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.main_section_lamp .section_sub .item02_div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.main_section_lamp .section_sub .item03_div {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.main_section_lamp .section_sub .item04_div {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.main_section_lamp .section_sub .item05_div {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.main_section_lamp .section_sub .item06_div {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈ Section -4- Bluebook ≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_bluebook article div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.main_section_bluebook article p {
+  color: #848484;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Sub-Items ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_bluebook .section_sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.main_section_bluebook .section_sub .item01_div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.main_section_bluebook .section_sub .item02_div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.main_section_bluebook .section_sub .item03_div {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.main_section_bluebook .section_sub .item04_div {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.main_section_bluebook .section_sub .item05_div {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.main_section_bluebook .section_sub .item06_div {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈ Section -5- Bottles ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_bottles article div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.main_section_bottles article p {
+  color: #848484;
+}
+
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Sub-Items ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+
+.main_section_bottles .section_sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.main_section_bottles .section_sub .item01_div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.main_section_bottles .section_sub .item02_div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.main_section_bottles .section_sub .item03_div {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+/*================= FOOTER ========================*/
+
+footer {
+  margin: 12vh 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer article {
+  width: 32%;
+  line-height: 20px;
+  padding-right: 30px;
+}
+
+footer article p {
+  font-size: 0.9rem;
+}
+
+footer article:nth-of-type(1) p:nth-of-type(1),
+footer article:nth-of-type(2) p:nth-of-type(1) {
+  margin-top: 2rem;
+}
+
+footer article:nth-of-type(1) p:nth-of-type(2) {
+  margin-top: 4rem;
+  color: #848484;
+}
+
+footer article:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer article:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+footer article:nth-of-type(2) div:nth-of-type(2) {
+  margin-left: 80px;
+}
+
+footer article:nth-of-type(3) {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+}
+
+footer article a {
+  padding-top: 3px;
+}

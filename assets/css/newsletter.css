@@ -1,0 +1,71 @@
+/*================= Imports =======================*/
+
+@font-face {
+  font-family: "karla-medium";
+  src: url("../fonts/Karla-Medium.ttf");
+}
+
+@font-face {
+  font-family: "karla-variant";
+  src: url("../fonts/Karla-VariableFont_wght.ttf");
+}
+/*===================================================
+                    Generals
+                    --------
+Font: Karla
+Farbe: #323A45/#848484
+
+===================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 10%;
+  font-size: 10px;
+  font-family: karla-variant;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: #848484;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+section h5 {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  padding-top: 15px;
+}
+
+section form {
+  margin-top: 30px;
+  height: 3vh;
+  text-align: center;
+}
+
+section form input[type="email"] {
+  padding-left: 3px;
+}
+
+section form input[type="submit"] {
+  color: #848484;
+  margin-left: 10px;
+}
+
+section form input[type="submit"]:hover {
+  color: #afafaf;
+  background-color: #5c5c5c;
+}
