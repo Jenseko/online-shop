@@ -42,6 +42,10 @@ img:hover {
   opacity: 60%;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 /*================= HEADER ======================*/
 
 header {
