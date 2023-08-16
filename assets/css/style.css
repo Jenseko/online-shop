@@ -26,7 +26,7 @@ Farbe: #323A45/#848484
 html {
   margin: 0 10%;
   font-size: 1rem;
-  font-family: karla-variant;
+  font-family: "karla-variant", sans-serif;
 }
 
 a {
@@ -39,11 +39,8 @@ img {
 }
 
 img:hover {
-  opacity: 60%;
-}
-
-a:hover {
-  cursor: pointer;
+  filter: opacity(60%);
+  transition: 0.8s ease;
 }
 
 /*================= HEADER ======================*/
@@ -70,12 +67,16 @@ header nav a:hover {
 
 /*=================== MAIN ========================*/
 
-/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Section -1- Backpack ≈≈≈≈≈≈≈≈≈ */
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Section - 1 - Backpack ≈≈≈≈≈≈≈ */
 
 .main_section_backpack article div {
   display: flex;
   justify-content: space-between;
   margin: 5px 0;
+}
+
+.main_section_backpack article {
+  padding-block: 0.5rem;
 }
 
 .main_section_backpack article p {
@@ -129,6 +130,10 @@ header nav a:hover {
   margin: 5px 0;
 }
 
+.main_section_book article {
+  padding-block: 0.5rem;
+}
+
 .main_section_book article p {
   color: #848484;
 }
@@ -172,12 +177,16 @@ header nav a:hover {
   grid-row: 2 / 3;
 }
 
-/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Section -3- Lamp ≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+/* ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ Section - 3 - Lamp ≈≈≈≈≈≈≈≈≈≈≈ */
 
 .main_section_lamp article div {
   display: flex;
   justify-content: space-between;
   margin: 5px 0;
+}
+
+.main_section_lamp article {
+  padding-block: 0.5rem;
 }
 
 .main_section_lamp article p {
@@ -223,12 +232,16 @@ header nav a:hover {
   grid-row: 2 / 3;
 }
 
-/* ≈≈≈≈≈≈≈≈≈≈≈ Section -4- Bluebook ≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+/* ≈≈≈≈≈≈≈≈≈≈≈ Section - 4 - Bluebook ≈≈≈≈≈≈≈≈≈≈≈ */
 
 .main_section_bluebook article div {
   display: flex;
   justify-content: space-between;
   margin: 5px 0;
+}
+
+.main_section_bluebook article {
+  padding-block: 0.5rem;
 }
 
 .main_section_bluebook article p {
@@ -274,12 +287,16 @@ header nav a:hover {
   grid-row: 2 / 3;
 }
 
-/* ≈≈≈≈≈≈≈≈≈≈≈ Section -5- Bottles ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ */
+/* ≈≈≈≈≈≈≈≈≈≈≈ Section - 5 - Bottles ≈≈≈≈≈≈≈≈≈≈≈≈≈ */
 
 .main_section_bottles article div {
   display: flex;
   justify-content: space-between;
   margin: 5px 0;
+}
+
+.main_section_bottles article {
+  padding-block: 0.5rem;
 }
 
 .main_section_bottles article p {
@@ -310,7 +327,7 @@ header nav a:hover {
   grid-row: 1 / 2;
 }
 
-/*================= FOOTER ========================*/
+/* ================ FOOTER ======================= */
 
 footer {
   margin: 12vh 0;
@@ -362,4 +379,36 @@ footer article:nth-of-type(3) {
 
 footer article a {
   padding-top: 3px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 80%;
+  }
+
+  header nav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  header nav a {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  header nav {
+    gap: 0.5rem;
+  }
 }
